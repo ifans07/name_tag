@@ -1,0 +1,117 @@
+/* Responsive */
+/* smartphone */
+@media all and (max-width: 670px){
+    body{
+        height: 100vh;
+    }
+    .container{
+        width: 90%;
+    }
+    .card{
+        /* position: relative; */
+        width: 100%;
+        max-width: 670px;
+    }
+    .blob{
+        display: none;
+        position: absolute;
+        top: -50px;
+        left: 0px;
+        z-index: -10;
+    }
+    .img{
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -215%);
+    }
+    .img img{
+        width: 110px;
+        height: 170px;
+        border-radius: 50%;
+        /* background-color: black; */
+    }
+    .desc{
+        display: block;
+        width: 100%;
+        margin-bottom: -15px;
+        /* background-color: slateblue; */
+    }
+    .profil{
+        display: block;
+        margin-top: 100px;
+        /* background-color: red; */
+    }
+    .skill{
+        display: block;
+        width: 100%;
+        /* background-color: slateblue; */
+    }
+
+    .sosial-media{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .bag1{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .bag2{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .sosial-group .fa-brands{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 15px;
+        text-transform: capitalize;
+
+    }
+    .fa-whatsapp:after{
+        content: "Whatsapp";
+        text-transform: capitalize;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .fa-telegram:after{
+        content: "telegram";
+        text-transform: lowercase;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .fa-linkedin:after{
+        content: "linkedin";
+        text-transform: lowercase;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+
+    .fa-github:after{
+        content: "github";
+        text-transform: lowercase;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .fa-instagram:after{
+        content: "instagram";
+        text-transform: lowercase;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .fa-facebook-f:after{
+        content: "facebook";
+        text-transform: lowercase;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+}
