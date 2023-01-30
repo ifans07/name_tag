@@ -1,11 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e8e2e2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(57, 106, 252, 0.5);
 }
 
 body {
@@ -15,8 +26,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
-  background: linear-gradient(45deg,#1267CF, #e7e7e7);
+  overflow-x: hidden;
+  background: linear-gradient(45deg, #1267cf, #e7e7e7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -41,7 +55,7 @@ body {
   /* border-radius: 20px; */
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.18); */
-  background: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -49,15 +63,14 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   transform-style: preserve-3d;
   transform: perspective(1000px);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.card:hover{
+.card:hover {
   width: 100%;
   max-width: 700px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
-
 
 .title {
   margin-bottom: 20px;
@@ -85,12 +98,12 @@ body {
 
 .skill {
   margin-top: 30px;
-  border-bottom: 2px solid #1267CF;
+  border-bottom: 2px solid #1267cf;
 }
 
 .skill h2 {
   margin-bottom: 20px;
-  border-bottom: 2px solid #1267CF;
+  border-bottom: 2px solid #1267cf;
 }
 
 .sosial-media {
@@ -101,7 +114,6 @@ body {
   margin-top: 50px;
   width: 100%;
 }
-
 
 /* .sosial-media::before {
   content: "";
@@ -120,12 +132,12 @@ body {
   width: 100%;
   /* background-color: black; */
   /* transform-style: preserve-3d; */
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-.card:hover .img{
+.card:hover .img {
   width: 50%;
-  transition: .3 ease-in-out;
+  transition: 0.3 ease-in-out;
 }
 .img::before {
   content: "";
@@ -135,7 +147,7 @@ body {
   width: 90%;
   height: 20px;
   /* background: rgba(0, 0, 0, 0.3); */
-  background-color: #1267CF;
+  background-color: #1267cf;
   opacity: 0.3;
   border-radius: 50%;
   z-index: -1;
@@ -151,7 +163,7 @@ body {
   display: none;
 }
 
-.card:hover .profil{
+.card:hover .profil {
   width: 50%;
   display: block;
   transition: 1s ease;
@@ -266,7 +278,7 @@ body {
 .progres-bar {
   width: 60%;
   height: 15px;
-  background-color: #E8E2E2;
+  background-color: #e8e2e2;
   border-radius: 40px;
   /* border: 1px solid #ff0066; */
 }
@@ -300,96 +312,113 @@ body {
   /* background-color: steelblue; */
 }
 
-.sosial-group .fa-brands{
+.sosial-group .fa-brands {
   position: relative;
   width: 50px;
   height: 50px;
-  background-color: #1267CF;
+  background-color: #1267cf;
   border-radius: 50%;
   display: block;
   text-align: center;
   line-height: 50px;
   color: #fff;
   font-size: 16px;
-  transition: ease-in .2s;
+  transition: ease-in 0.2s;
 }
 
 /* .sosial-group:hover .fa-brands{
   background-color: transparent;
 } */
 
-.sosial-group:hover .fa-whatsapp{
+.sosial-group:hover .fa-whatsapp {
   background-color: transparent;
   color: #128c7e;
   border: 2px solid #128c7e;
   font-size: 20px;
 }
 
-.sosial-group:hover .fa-telegram{
+.sosial-group:hover .fa-telegram {
   background-color: transparent;
   color: #0088cc;
   border: 2px solid #0088cc;
   font-size: 20px;
 }
 
-.sosial-group:hover .fa-linkedin{
+.sosial-group:hover .fa-linkedin {
   background-color: transparent;
   color: #0077b5;
   border: 2px solid #0077b5;
   font-size: 20px;
 }
 
-.sosial-group:hover .fa-github{
+.sosial-group:hover .fa-github {
   background-color: transparent;
   color: #020202;
   border: 2px solid #020202;
   font-size: 20px;
 }
 
-.sosial-group:hover .fa-instagram{
+.sosial-group:hover .fa-instagram {
   background-color: transparent;
-  color: #E1306C;
-  border: 2px solid #E1306C;
+  color: #e1306c;
+  border: 2px solid #e1306c;
   font-size: 20px;
 }
 
-.sosial-group:hover .fa-facebook-f{
+.sosial-group:hover .fa-facebook-f {
   background-color: transparent;
-  color: #4267B2;
-  border: 2px solid #4267B2;
+  color: #4267b2;
+  border: 2px solid #4267b2;
   font-size: 20px;
 }
 
-.bag1{
+.bag1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 20px;
   width: 100%;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-.bag2{
+.bag2 {
   display: none;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
   width: 100%;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
-
-
-.card:hover .bag1{
+.card:hover .bag1 {
   display: flex;
   margin-right: 60px;
   justify-content: space-between;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.card:hover .bag2{
+.card:hover .bag2 {
   display: flex;
   justify-content: space-between;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
+/* .bullet {
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  background-color: #0077b5;
+  top: 30%;
+
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+} */
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgba(57, 106, 252, 0.8);
+  left: 0;
+}
