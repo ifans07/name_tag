@@ -21,6 +21,9 @@
     left: 50%;
     transform: translate(-50%);
   }
+  iframe{
+    width: 100%;
+  }
   .card {
     position: relative;
     width: 100%;
