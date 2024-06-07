@@ -24,11 +24,17 @@
   </head>
 
   <body>
+    <div class="desc-profil">
+        <div style="font-size: 32px; margin-bottom: 20px; cursor: pointer; display: inline-block;" id="laquo">&laquo;</div>
+        <h3 style="margin-bottom: 15px;">Deskripsi:</h3>
+        <p>Saya lulusan Universitas Teknologi Mataram (UTM) jurusan Rekayasa Perangkat Lunak (S1), dengan keahlian dasar dalam pemrograman PHP dan Javascript. Saya memiliki pengalaman dalam pengembangan aplikasi web. Saya dikenal detail-oriented, mampu bekerja dalam tim, dan memiliki kemampuan analitis yang baik. Saat ini, saya ingin memperdalam lagi ilmu programming saya terutama di dalam bahasa pemrograman Javascript.</p>
+        <img src="fotoprofil-removebg.png" height="300" align="center">
+    </div>
     <div class="bullet"></div>
-    <div class="container">
+    <div class="container" id="profil">
       <div class="card">
         <div class="title">
-          <!-- <h1>Kartu Nama</h1> -->
+          
         </div>
         <div class="desc">
           <div class="img">
@@ -73,7 +79,14 @@
                     </table> -->
             <div class="hero">
               <h1 class="name">IFAN SUTIONO</h1>
-              <p>Web Developer, Gamer</p>
+              <p>Web Developer</p>
+
+              <div>
+                <p style="color: #1267cf; cursor: pointer;" id="more">More &raquo;</p>
+              </div>
+              <!-- <div class="desc-profil" style="margin-top: 15px;font-weight: 400;">
+                <p>Saya lulusan Universitas Teknologi Mataram (UTM), Jurusan Rekayasa Perangkat Lunak (S1)</p>
+              </div> -->
             </div>
             <div class="skill">
               <h2>Skill</h2>
@@ -128,34 +141,34 @@
         <div class="sosial-media">
           <div class="bag1">
             <div class="sosial-group">
-              <a href="">
+              <a href="https://wa.me/qr/XGWDJ7GFMJKHJ1" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
               </a>
             </div>
             <div class="sosial-group">
-              <a href="">
+              <a href="https://t.me/ifansutiono">
                 <i class="fa-brands fa-telegram"></i>
               </a>
             </div>
             <div class="sosial-group">
-              <a href="">
+              <a href="linkedin.com/in/ifansutiono">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
             </div>
           </div>
           <div class="bag2">
             <div class="sosial-group">
-              <a href="">
+              <a href="https://github.com/ifans07" target="_blank">
                 <i class="fa-brands fa-github"></i>
               </a>
             </div>
             <div class="sosial-group">
-              <a href="">
+              <a href="https://www.instagram.com/ifanszoro" target="_blank">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </div>
             <div class="sosial-group">
-              <a href="">
+              <a href="https://www.facebook.com/ifans.zoro/" target="_blank">
                 <i class="fa-brands fa-facebook-f"></i>
               </a>
             </div>
@@ -198,5 +211,27 @@
             speed: 300
         });
     </script> -->
+
+    <script type="text/javascript">
+      let laquo = document.getElementById('laquo')
+      let more = document.getElementById('more')
+      let descProfil = document.querySelector('.desc-profil')
+      let profil = document.querySelector('#profil')
+
+      laquo.addEventListener('click', function(e){
+        descProfil.style.zIndex = 0
+        profil.style.zIndex = 99
+        descProfil.style.transition = '.5s ease'
+        profil.style.transition = '.3s ease'
+        descProfil.style.display = 'none'
+      })
+      more.addEventListener('click', function(e){
+        descProfil.style.zIndex = 99
+        profil.style.zIndex = 0
+        descProfil.style.display = 'block'
+        descProfil.style.transition = '.3s ease'
+        profil.style.transition = '.5s ease'
+      })
+    </script>
   </body>
 </html>
